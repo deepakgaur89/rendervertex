@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | RenderVertex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .bg-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(0, 255, 200, 0.15);
+      filter: blur(120px);
+      border-radius: 50%;
+      top: -100px;
+      left: -100px;
+      animation: float 8s ease-in-out infinite alternate;
+    }
+
+    .bg-glow2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 140, 255, 0.15);
+      filter: blur(120px);
+      border-radius: 50%;
+      bottom: -100px;
+      right: -100px;
+      animation: float 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0px) translateX(0px);
+      }
+      to {
+        transform: translateY(30px) translateX(20px);
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 40px;
+      max-width: 800px;
+    }
+
+    .logo {
+      font-size: 18px;
+      letter-spacing: 4px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ffffff, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 35px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #06b6d4, #3b82f6);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 30px rgba(59,130,246,0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(59,130,246,0.5);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+      z-index: 10;
+    }
+
+    @media(max-width:768px){
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+      .cursor-glow {
+      position: fixed;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56,189,248,0.28) 0%, rgba(56,189,248,0.08) 40%, transparent 75%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      mix-blend-mode: screen;
+      transition: transform 0.08s linear;
+      filter: blur(10px);
+    }
+
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+      animation: gridMove 20s linear infinite;
+    }
+
+    @keyframes gridMove {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(40px);
+      }
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="cursor-glow"></div>
+  <div class="grid-bg"></div>
+
+  <div class="bg-glow"></div>
+  <div class="bg-glow2"></div>
+
+  <div class="container">
+    <div class="logo">RenderVertex Studio</div>
+
+    <h1>Coming Soon</h1>
+
+    <p>
+      We are building a modern 3D rendering experience with stunning visuals,
+      high-quality architectural renders, animations, and creative digital solutions.
+      Something amazing is on the way.
+    </p>
+
+    <a href="mailto:contact@rendervertex.com" class="btn">Contact Us</a>
+  </div>
+
+  <div class="footer">
+    © 2026 RenderVertex Studio — All Rights Reserved
+  </div>
+
+  <script>
+    const cursorGlow = document.querySelector('.cursor-glow');
+
+    document.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>
