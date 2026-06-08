@@ -38,14 +38,14 @@ h1, h2 {
     text-decoration: none;
 }
 .logo img {
-    height: 50px; 
+    height: 80px; /* SIZE INCREASED FROM 50px TO 80px */
     width: auto;
     object-fit: contain;
     mix-blend-mode: screen; 
 }
 .logo-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px; /* SIZE INCREASED FROM 12px TO 16px */
     font-weight: 400;
     letter-spacing: 4px;
     color: #ffffff;
@@ -181,13 +181,9 @@ h1, h2 {
     margin-bottom: 40px;
 }
 .about-content {
-    max-width: 800px;
-}
-.team-img {
-    max-width: 200px;
-    margin-bottom: 15px;
-    display: block;
-    color: #fff;
+    max-width: 700px;
+    margin-left: auto; /* TEXT KO RIGHT SIDE SHIFT KARNE KE LIYE */
+    text-align: right; /* TEXT KI ALIGNMENT RIGHT KARNE KE LIYE */
 }
 .about-content h3 {
     font-size: 1.8rem;
@@ -295,6 +291,10 @@ footer p {
     }
     .text-right {
         text-align: left;
+    }
+    .about-content {
+        text-align: left; /* Mobile me wapas left align taaki ajeeb na lage */
+        margin-left: 0;
     }
     .contact-form-section {
         justify-content: flex-start;
