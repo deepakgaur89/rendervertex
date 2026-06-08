@@ -1,210 +1,98 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* --- About Us Section --- */
+.about-section {
+    background-color: #111111; /* Dark background as in screenshot */
+    padding: 80px 10%;
 }
-
-html {
-    scroll-behavior: smooth;
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-body {
-    background-color: #0d0d0d;
-    color: #f4f4f4;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-}
-
-/* Typography */
-h1, h2, .logo {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: rgba(13, 13, 13, 0.95);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
+.gold-text {
+    color: #ffcc00; /* Bright yellow/gold color from your screenshot */
+    font-family: 'Poppins', sans-serif; /* Ya aap 'Playfair Display' bhi use kar sakte hain */
     font-weight: 600;
-    letter-spacing: 2px;
 }
-
-.logo span {
-    font-weight: 300;
-    color: #a8a8a8;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #c9a77c; /* Elegant Gold Hover */
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Hero section background */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('portfolio_1.jpg.jpg') center/cover;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 40px;
-    color: #e0e0e0;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn {
-    padding: 15px 40px;
-    background-color: #c9a77c; /* Elegant Gold Button */
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn:hover {
-    background-color: #fff;
-    transform: translateY(-3px);
-}
-
-/* Portfolio Section */
-.portfolio {
-    padding: 100px 50px;
-    text-align: center;
-    background-color: #121212;
-}
-
-.section-title {
+.text-right {
+    text-align: right;
     font-size: 2.5rem;
-    margin-bottom: 60px;
-    letter-spacing: 2px;
+    margin-bottom: 40px;
 }
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+.about-content {
+    max-width: 800px;
 }
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 350px; /* Uniform height */
-    object-fit: cover; 
+.team-img {
+    max-width: 200px;
+    margin-bottom: 15px;
     display: block;
-    transition: transform 0.5s ease;
+    color: #fff; /* Shows alt text clearly if image is missing */
+}
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.about-content p {
+    font-size: 1.1rem;
+    color: #eeeeee;
+    line-height: 1.8;
 }
 
-.overlay {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
+/* --- Get in Touch Section --- */
+.contact-form-section {
+    background-color: #222222; /* Slightly lighter gray background */
+    padding: 80px 10%;
+    display: flex;
+    justify-content: flex-end; /* Form ko right side align karne ke liye */
+}
+.form-container {
     width: 100%;
-    padding: 20px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-    color: #fff;
-    text-align: left;
-    font-size: 1.2rem;
-    font-family: 'Playfair Display', serif;
-    transition: bottom 0.4s ease;
+    max-width: 500px;
 }
-
-.gallery-item:hover img {
-    transform: scale(1.05); /* Smooth zoom effect */
-}
-
-.gallery-item:hover .overlay {
-    bottom: 0;
-}
-
-/* Footer */
-footer {
-    background-color: #050505;
-    padding: 80px 20px 40px;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-footer p {
-    color: #888;
+.form-container h2 {
+    font-size: 2.5rem;
     margin-bottom: 30px;
 }
-
-.copyright {
-    font-size: 0.9rem;
-    color: #444;
-    margin-top: 50px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px; /* Halke se gol kinare */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333;
+}
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: 2px solid #ffcc00; /* Click karne par gold outline */
+}
+.submit-btn {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #e6b800; /* Hover karne par thoda dark gold */
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness for Form */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
+    .text-right {
+        text-align: left;
     }
-    .nav-links {
-        margin-top: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    .portfolio {
-        padding: 60px 20px;
-    }
-    .gallery-item img {
-        height: 250px;
+    .contact-form-section {
+        justify-content: flex-start;
     }
 }
