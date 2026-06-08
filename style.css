@@ -40,6 +40,7 @@ h1, h2, .logo {
     height: 70px;
     width: auto;
     object-fit: contain;
+    mix-blend-mode: screen; /* Ye line logo ke black background ko gayab karke navbar se match karegi */
 }
 .nav-links {
     list-style: none;
