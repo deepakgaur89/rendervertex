@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rendervertex | 3D Interior Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="#home" class="logo">
-            <img src="images/logo.png" alt="Rendervertex Logo">
-            <div class="logo-text">RENDER<span>VERTEX</span></div>
-        </a>
+        <div class="logo">RENDER<span>VERTEX</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact-form">Contact</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
             <h1>Immersive 3D Spaces</h1>
@@ -30,57 +31,257 @@
         </div>
     </header>
 
-    <section id="portfolio" class="portfolio">
-        <h2 class="section-title">Selected Works</h2>
-        <div class="gallery">
-            <div class="gallery-item"><img src="images/portfolio_1.jpg.jpg" alt="Classic Elegance"><div class="overlay">Classic Elegance</div></div>
-            <div class="gallery-item"><img src="images/portfolio_2.jpg.jpg" alt="Luxury Bedroom"><div class="overlay">Luxury Bedroom</div></div>
-            <div class="gallery-item"><img src="images/portfolio_3.jpg.jpg" alt="Modern Suite"><div class="overlay">Modern Suite</div></div>
-            <div class="gallery-item"><img src="images/portfolio_4.jpg.jpg" alt="Traditional Lounge"><div class="overlay">Traditional Lounge</div></div>
-            <div class="gallery-item"><img src="images/portfolio_5.jpg.jpg" alt="Contemporary Bedroom"><div class="overlay">Contemporary Bedroom</div></div>
-            <div class="gallery-item"><img src="images/portfolio_6.jpg.jpg" alt="Artistic Living Space"><div class="overlay">Artistic Living Space</div></div>
-            <div class="gallery-item"><img src="images/portfolio_7.jpg.jpg" alt="Cozy Seating"><div class="overlay">Cozy Seating</div></div>
-            <div class="gallery-item"><img src="images/portfolio_8.jpg.jpg" alt="Emerald Lounge"><div class="overlay">Emerald Lounge</div></div>
-            <div class="gallery-item"><img src="images/portfolio_9.jpg.jpg" alt="Luxury Cellar"><div class="overlay">Luxury Cellar</div></div>
-            <div class="gallery-item"><img src="images/portfolio_10.jpg.jpg" alt="Modern Reading Nook"><div class="overlay">Modern Reading Nook</div></div>
-            <div class="gallery-item"><img src="images/portfolio_11.jpg.jpg" alt="Marble Hallway"><div class="overlay">Marble Hallway</div></div>
-            <div class="gallery-item"><img src="images/portfolio_12.jpg.jpg" alt="Sculpture Corridor"><div class="overlay">Sculpture Corridor</div></div>
-            <div class="gallery-item"><img src="images/portfolio_13.jpg.jpg" alt="Modern Marble Bathroom"><div class="overlay">Modern Marble Bathroom</div></div>
-            <div class="gallery-item"><img src="images/portfolio_14.jpg.jpg" alt="Minimalist Wardrobe"><div class="overlay">Minimalist Wardrobe</div></div>
-            <div class="gallery-item"><img src="images/portfolio_15.jpg.jpg" alt="Elegant Glass Shower"><div class="overlay">Elegant Glass Shower</div></div>
-            <div class="gallery-item"><img src="images/portfolio_16.jpg.jpg" alt="Dark Marble Vanity"><div class="overlay">Dark Marble Vanity</div></div>
-            <div class="gallery-item"><img src="images/portfolio_17.jpg.jpg" alt="Luxury Powder Room"><div class="overlay">Luxury Powder Room</div></div>
-            <div class="gallery-item"><img src="images/portfolio_18.jpg.jpg" alt="Grey Stone Bathroom"><div class="overlay">Grey Stone Bathroom</div></div>
-            <div class="gallery-item"><img src="images/portfolio_19.jpg.jpg" alt="Golden Side Table"><div class="overlay">Golden Side Table</div></div>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="section-label">What we offer</span>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-sub">From concept to photorealistic output — we handle every stage of your 3D visualization project.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Interior rendering</h3>
+                <p>Photorealistic renders of living rooms, bedrooms, kitchens, and every interior space.</p>
+                <span class="srv-tag">Most popular</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>3D walkthroughs</h3>
+                <p>Cinematic animated tours of your space — perfect for presentations and client pitches.</p>
+                <span class="srv-tag">High impact</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>360° panoramas</h3>
+                <p>Fully interactive virtual tours that let clients explore spaces from every angle.</p>
+                <span class="srv-tag">Immersive</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <h3>Furniture & product</h3>
+                <p>Studio-quality renders of furniture, decor, and products for catalogs and e-commerce.</p>
+                <span class="srv-tag">E-commerce</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <h3>Floor plan renders</h3>
+                <p>2D and 3D floor plan visualizations for architectural layouts and space planning.</p>
+                <span class="srv-tag">Architecture</span>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>Custom projects</h3>
+                <p>Got something unique? Let's discuss. We take on bespoke rendering projects of any scale.</p>
+                <span class="srv-tag">Get a quote</span>
+            </div>
+        </div>
+        <!-- CTA Strip after Services -->
+        <div class="cta-strip">
+            <div>
+                <span>Ready to visualize your space?</span>
+                <p>Tell us about your project — we'll get back within 24 hours.</p>
+            </div>
+            <a href="#contact" class="btn-outline">Get a free quote</a>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <h2 class="gold-text text-right">About Us</h2>
-            <div class="about-content">
-                <h3 class="gold-text">Crafting Stunning 3D Visuals</h3>
-                <p>We bring ideas to life through high-quality 3D rendering, creating realistic visuals that help clients visualize projects with clarity, precision, and impact.</p>
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Selected Works</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="portfolio_1.jpg.jpg" alt="Classic Elegance"><div class="overlay">Classic Elegance</div></div>
+            <div class="gallery-item"><img src="portfolio_2.jpg.jpg" alt="Luxury Bedroom"><div class="overlay">Luxury Bedroom</div></div>
+            <div class="gallery-item"><img src="portfolio_3.jpg.jpg" alt="Modern Suite"><div class="overlay">Modern Suite</div></div>
+            <div class="gallery-item"><img src="portfolio_4.jpg.jpg" alt="Traditional Lounge"><div class="overlay">Traditional Lounge</div></div>
+            <div class="gallery-item"><img src="portfolio_5.jpg.jpg" alt="Contemporary Bedroom"><div class="overlay">Contemporary Bedroom</div></div>
+            <div class="gallery-item"><img src="portfolio_6.jpg.jpg" alt="Artistic Living Space"><div class="overlay">Artistic Living Space</div></div>
+            <div class="gallery-item"><img src="portfolio_7.jpg.jpg" alt="Cozy Seating"><div class="overlay">Cozy Seating</div></div>
+            <div class="gallery-item"><img src="portfolio_8.jpg.jpg" alt="Emerald Lounge"><div class="overlay">Emerald Lounge</div></div>
+            <div class="gallery-item"><img src="portfolio_9.jpg.jpg" alt="Luxury Cellar"><div class="overlay">Luxury Cellar</div></div>
+            <div class="gallery-item"><img src="portfolio_10.jpg.jpg" alt="Modern Reading Nook"><div class="overlay">Modern Reading Nook</div></div>
+            <div class="gallery-item"><img src="portfolio_11.jpg.jpg" alt="Marble Hallway"><div class="overlay">Marble Hallway</div></div>
+            <div class="gallery-item"><img src="portfolio_12.jpg.jpg" alt="Sculpture Corridor"><div class="overlay">Sculpture Corridor</div></div>
+            <div class="gallery-item"><img src="portfolio_13.jpg.jpg" alt="Modern Marble Bathroom"><div class="overlay">Modern Marble Bathroom</div></div>
+            <div class="gallery-item"><img src="portfolio_14.jpg.jpg" alt="Minimalist Wardrobe"><div class="overlay">Minimalist Wardrobe</div></div>
+            <div class="gallery-item"><img src="portfolio_15.jpg.jpg" alt="Elegant Glass Shower"><div class="overlay">Elegant Glass Shower</div></div>
+            <div class="gallery-item"><img src="portfolio_16.jpg.jpg" alt="Dark Marble Vanity"><div class="overlay">Dark Marble Vanity</div></div>
+            <div class="gallery-item"><img src="portfolio_17.jpg.jpg" alt="Luxury Powder Room"><div class="overlay">Luxury Powder Room</div></div>
+            <div class="gallery-item"><img src="portfolio_18.jpg.jpg" alt="Grey Stone Bathroom"><div class="overlay">Grey Stone Bathroom</div></div>
+            <div class="gallery-item"><img src="portfolio_19.jpg.jpg" alt="Golden Side Table"><div class="overlay">Golden Side Table</div></div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="section-header">
+            <span class="section-label">How it works</span>
+            <h2 class="section-title">Simple 4-step process</h2>
+            <p class="section-sub">From your brief to the final render — a smooth, transparent workflow every time.</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-num">01</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <h3>Share your brief</h3>
+                <p>Send us your 3D files, mood boards, references, and project details. The more you share, the better we understand your vision.</p>
+                <span class="step-tag">→ Files, references, requirements</span>
+            </div>
+            <div class="process-step">
+                <div class="step-num">02</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+                </div>
+                <h3>Scene setup</h3>
+                <p>Our artists carefully set up lighting, materials, textures, and camera angles to best showcase your space.</p>
+                <span class="step-tag">→ Lighting, materials, composition</span>
+            </div>
+            <div class="process-step">
+                <div class="step-num">03</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.37"/></svg>
+                </div>
+                <h3>Review & revise</h3>
+                <p>You receive a draft render for feedback. We refine until you're fully satisfied — revisions are part of the process.</p>
+                <span class="step-tag">→ Draft preview, feedback, edits</span>
+            </div>
+            <div class="process-step">
+                <div class="step-num">04</div>
+                <div class="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3>Final delivery</h3>
+                <p>High-resolution files delivered in your preferred format — JPG, PNG, or EXR — within the agreed timeline.</p>
+                <span class="step-tag">→ 4K output, fast turnaround</span>
+            </div>
+        </div>
+        <!-- CTA Strip after Process -->
+        <div class="cta-strip">
+            <div>
+                <span>It's that simple.</span>
+                <p>Most projects are delivered within 48–72 hours.</p>
+            </div>
+            <a href="#contact" class="btn-outline">Start your project</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <span class="section-label">Got questions?</span>
+            <h2 class="section-title">Frequently asked</h2>
+            <p class="section-sub">Everything you need to know before starting your project with us.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>How long does a render take to deliver?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">Delivery</span>
+                    Most standard interior renders are delivered within 48–72 hours. Complex scenes, animations, or bulk projects may take 4–7 days. We always confirm the timeline before starting work.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>What file formats do you accept?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">File formats</span>
+                    We accept 3ds Max, SketchUp, Blender, Revit, AutoCAD, and OBJ/FBX files. If you only have floor plans or reference images, we can work with those too — just share what you have.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>How many revisions are included?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">Revisions</span>
+                    Every project includes up to 2–4 rounds of revisions at no extra cost. This covers changes to camera angles, lighting, materials, and minor layout adjustments. Additional revisions are available at a small fee.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>What resolution are the final renders?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">Output</span>
+                    Our standard output is 4K (3840×2160px). We also deliver in custom resolutions based on your requirement — print, web, or presentation. Files are exported as JPG, PNG, or EXR.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>Do you offer 3D modeling if I don't have a file?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">Modeling</span>
+                    Yes. If you only have drawings, sketches, or reference photos, our team can build the 3D model from scratch. Modeling is quoted separately based on project complexity.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span>How do I get started?</span>
+                    <div class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div>
+                </button>
+                <div class="faq-a">
+                    <span class="faq-tag">Getting started</span>
+                    Simply email us at contact@rendervertex.com. Share your files and brief, and we'll send a quote within 24 hours. No commitment needed to get a quote.
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-form" class="contact-form-section">
-        <div class="form-container">
-            <h2 class="gold-text">Get in Touch</h2>
-            <form action="#" method="POST" class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+    <!-- Main CTA Section -->
+    <section class="cta-main">
+        <span class="section-label">Let's work together</span>
+        <h2>Turn your ideas into stunning 3D visuals</h2>
+        <p>Whether it's one render or a full project — we deliver quality that speaks for itself.</p>
+        <div class="cta-btns">
+            <a href="#contact" class="btn">Start a project</a>
+            <a href="#portfolio" class="btn-outline">View portfolio</a>
+        </div>
+        <div class="cta-trust">
+            <span>✦ Free consultation</span>
+            <span>✦ Revisions included</span>
+            <span>✦ 48–72 hr delivery</span>
+            <span>✦ 4K resolution</span>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer id="contact">
         <h2>Let's create something beautiful.</h2>
         <p>Email: contact@rendervertex.com | Instagram: @rendervertex</p>
         <p class="copyright">&copy; 2026 Rendervertex. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+    </script>
+
 </body>
 </html>
