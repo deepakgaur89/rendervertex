@@ -270,18 +270,18 @@
     <!-- Footer -->
     <footer id="contact">
         <h2>Let's create something beautiful.</h2>
-        <p>Email: info.rendervertex@gmail.com</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/info.rendervertex/" target="_blank" rel="noopener" class="icon-circle" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <rect x="2" y="2" width="20" height="20" rx="5"/>
-                    <circle cx="12" cy="12" r="4.2"/>
-                    <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
-                </svg>
-            </a>
-        </div>
+        <p>Email: info.rendervertex@gmail.com | Instagram: @rendervertex</p>
         <p class="copyright">&copy; 2026 Rendervertex. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <button id="lb-close" onclick="closeLightbox()">✕</button>
+        <button id="lb-prev" onclick="event.stopPropagation(); changeImage(-1)">&#8249;</button>
+        <img id="lb-img" src="" alt="">
+        <button id="lb-next" onclick="event.stopPropagation(); changeImage(1)">&#8250;</button>
+        <div id="lb-caption"></div>
+    </div>
 
     <script>
         function toggleFaq(btn) {
@@ -290,6 +290,46 @@
             document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
             if (!isOpen) item.classList.add('open');
         }
+
+        // Lightbox
+        let currentIndex = 0;
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryItems.forEach((item, index) => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', () => openLightbox(index));
+        });
+
+        function openLightbox(index) {
+            currentIndex = index;
+            const img = galleryItems[index].querySelector('img');
+            const caption = galleryItems[index].querySelector('.overlay').textContent;
+            document.getElementById('lb-img').src = img.src;
+            document.getElementById('lb-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function changeImage(dir) {
+            currentIndex = (currentIndex + dir + galleryItems.length) % galleryItems.length;
+            const img = galleryItems[currentIndex].querySelector('img');
+            const caption = galleryItems[currentIndex].querySelector('.overlay').textContent;
+            document.getElementById('lb-img').src = img.src;
+            document.getElementById('lb-caption').textContent = caption;
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('active')) return;
+            if (e.key === 'ArrowRight') changeImage(1);
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'Escape') closeLightbox();
+        });
     </script>
 
 </body>
